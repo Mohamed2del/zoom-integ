@@ -1,0 +1,5 @@
+<button (click)="startMeeting()">Start Meeting</button>
+<div *ngIf="meetingDetails">
+  <p>Meeting ID: {{ meetingDetails.id }}</p>
+  <p>Join URL: {{ meetingDetails.join_url }}</p>
+</div>

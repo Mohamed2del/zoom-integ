@@ -9,9 +9,10 @@ export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-    url  = "https://5a09-156-213-230-18.ngrok-free.app"
+    url  = "http://localhost:8080"
   redirectToZoomOAuth() {
-        window.location.href = this.url+'/oauth2/authorization/zoom';
+    // to get from zoom dash
+        window.location.href = 'https://zoom.us/oauth/authorize?client_id=3d3uuHV2QwaLtG9ll8VpNQ&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fzoom-auth';
   }
 
   handleAuthentication() {
